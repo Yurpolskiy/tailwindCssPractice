@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        font-size: 44px;
+        font-family: theme(fontFamily.PlayFair);
+        @apply dark:text-slate-50 text-brightBlack
+    }
+    h2 {
+        font-size: 40px;
+        font-family: theme(fontFamily.PlayFair);
+        @apply dark:text-slate-50 text-brightBlack
+    }
+    h3 {
+        font-size: 24px;
+        font-family: theme(fontFamily.PlayFair);
+        @apply dark:text-slate-50 text-brightBlack
+    }
+}

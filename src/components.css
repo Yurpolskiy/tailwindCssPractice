@@ -1,0 +1,119 @@
+@tailwind components;
+
+@layer components {
+
+    .headerLink {
+        @apply text-sm sm:text-xl font-semibold  text-brightBlack dark:text-slate-50 relative 
+    }
+
+    .adaptiveContainer {
+        @apply xs:container sm:container md:container lg:container xl:container 2xl:container
+    }
+
+    .btnDualTheme {
+        @apply text-xl font-bold text-coral dark:text-neonGreen
+    }
+
+    .btn {
+        @apply w-[300px] h-20 border-grayDark border-[1px]
+    }
+
+    .articleText {
+        @apply font-Lato dark:text-slate-50 opacity-80 text-lg font-light mt-3
+    }
+    .textHighlighter {
+        @apply italic text-spring dark:text-blue font-PlayFair
+    }
+    .adaptiveMaxWidth {
+        @apply xs:max-w-sm xs:text-centersm:max-w-lgmd:max-w-md md:text-leftlg:max-w-lg
+    }
+    .quoteLight {
+        content: url('/src/images/quoteLight.svg');
+
+        position: absolute;
+        top: -35px;
+        left: -51px;
+    }
+    
+    .quoteDark {
+        content: url('/src/images/quoteDark.svg');
+
+        position: absolute;
+        top: -35px;
+        left: -51px;
+    }
+
+    .productSectionUpperLine {
+        display: block;
+
+        width: 100px;
+        height: 1px;
+
+        background: theme(colors.spring)
+    }
+
+    .underlineGreen {
+        background: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0) 116.9%);
+
+        height: 3px;
+        width: 42px;
+
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+
+        transition: 0.2s ease;
+    }
+    .underlineOrange {
+        background: linear-gradient(96.73deg, #F1897B 6.73%, rgba(83, 243, 205, 0) 116.9%);
+        height: 3px;
+        width: 42px;
+
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+
+        transition: 0.2s ease;
+      }
+    .buttonUnderlineGreen {
+        position: absolute; 
+        bottom: 0;
+        left: 10%;
+
+        background: theme(colors.neonGreen);
+        opacity: 0.3;
+
+        height: 13px;
+        width: 100%;
+        
+    }
+    .buttonUnderlineGreen:hover {
+        background: #02E0AB;
+    }
+    .buttonUnderlineCoral {
+        position: absolute; 
+        bottom: 0;
+        left: 10%;
+
+        background: theme(colors.coral);
+        opacity: 0.3;
+
+        height: 13px;
+        width: 100%;
+    }
+    .buttonUnderlineCoral:hover {
+        background: theme(colors.coralDarker)
+    }
+}
+
+.laptop img {
+    margin: 0 auto;
+    width: 80%; 
+    max-width: 970px;
+
+    position: relative;
+
+    cursor:pointer;
+
+    @apply xs:w-full md:w-[80%] xs:mt-10 md:mt-14 lg:mt-20 xl:mt-32
+}
