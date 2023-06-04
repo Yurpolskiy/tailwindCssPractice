@@ -17,13 +17,13 @@ module.exports = {
         '2xs': '525px',
       },
       backgroundImage: {
-        'productSection': "url('images/productSectionImg.png')",
-        'quoteSection': "url('images/quoteBackground.png')",
-        'quoteLight': "url('images/quoteLight.svg')",
-        'quoteLight': "url('images/quoteDark.svg')",
-        'reviewsFirst': "url('images/reviewsFirstImg.png')",
-        'reviewsSecond': "url('images/reviewsSecondImg.png')",
-        'reviewsThird': "url('images/reviewsThirdImg.png')"
+        'productSection': "url('/src/images/productSectionImg.png')",
+        'quoteSection': "url('/src/images/quoteBackground.png')",
+        'quoteLight': "url('/src/images/quoteLight.svg')",
+        'quoteLight': "url('/src/images/quoteDark.svg')",
+        'reviewsFirst': "url('/src/images/reviewsFirstImg.png')",
+        'reviewsSecond': "url('/src/images/reviewsSecondImg.png')",
+        'reviewsThird': "url('/src/images/reviewsThirdImg.png')"
       },
       backgroundSize: {
         '50%': '50%',
