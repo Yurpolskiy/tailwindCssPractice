@@ -1,10 +1,12 @@
-const plugin = require('tailwindcss/plugin');
-const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
-
+const plugin = require('tailwindcss/plugin')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src//*.{html,js}"],
+  content: [
+    "./src/**/*.html",
+    "./dist/**/*.html",
+    "./src/**/*.js"
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -17,13 +19,13 @@ module.exports = {
         '2xs': '525px',
       },
       backgroundImage: {
-        'productSection': "url('/src/images/productSectionImg.png')",
-        'quoteSection': "url('/src/images/quoteBackground.png')",
-        'quoteLight': "url('/src/images/quoteLight.svg')",
-        'quoteLight': "url('/src/images/quoteDark.svg')",
-        'reviewsFirst': "url('/src/images/reviewsFirstImg.png')",
-        'reviewsSecond': "url('/src/images/reviewsSecondImg.png')",
-        'reviewsThird': "url('/src/images/reviewsThirdImg.png')"
+        'productSection': "url('./images/productSectionImg.png')",
+        'quoteSection': "url('./images/quoteBackground.png')",
+        'quoteLight': "url('./images/quoteLight.svg')",
+        'quoteDark': "url('./images/quoteDark.svg')",
+        'reviewsFirst': "url('./images/reviewsFirstImg.png')",
+        'reviewsSecond': "url('./images/reviewsSecondImg.png')",
+        'reviewsThird': "url('./images/reviewsThirdImg.png')"
       },
       backgroundSize: {
         '50%': '50%',
@@ -50,11 +52,6 @@ module.exports = {
   },
   plugins: [
     plugin(function({addComponents, addUtilities, addBase, theme}) {
-      addComponents({
-      }),
-      addUtilities({
-
-      }),
       addBase({
         'h1': {fontSize: theme('fontSize.5xl'), fontFamily: theme('fontFamily.PlayFair') } ,
         'h2': {fontSize: theme('fontSize.40px'), fontFamily: theme('fontFamily.PlayFair') } ,

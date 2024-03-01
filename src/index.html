@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/output.css">
-    <link rel="stylesheet" href="/dist/outputComponents.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@300;400;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../Users/Anton/Desktop/dist/output.css"   >
     <title>Document</title>
+
 </head>
 
 <body class="bg-slate-50 dark:bg-blueMainBackground">
     <main>
         <div class="pt-8 bg-no-repeat bg-cover xs:bg-center md:bg-top 
-                    bg-[url('/src/images/whiteModeSection.png')]
+                    bg-[url('./images/whiteModeSection.png')]
                     dark:bg-[url('/src/images/darkModeSection.jpg')]">
             <header class="py-6 backdrop-blur-sm">
                 <div class="mx-auto adaptiveContainer flex xs:justify-center
                             md:justify-between ">
-                    <div class="xs:hidden md:block"><img src="/src/images/logo.png" alt="logo"></div>
+                    <div class="xs:hidden md:block"><img src="../../../Users/Anton/Desktop/dist/images/logo.png" alt="logo"></div>
                     <nav class="max-w-xl xs:w-full 2xs:w-5/6 sm:w-[90%] md:w-[75%] lg:w-2/3">
                         <ul class="flex justify-between xs:gap-3 lg:gap-7">
                             <li>
@@ -91,7 +91,8 @@
                             mx-auto xs:mt-12 sm:mt-24 lg:mt-36
                             xs:bg-productSection bg-cover bg-no-repeat md:bg-none
                             flex relative" > <!-- Это продукт секция  -->
-                <img class="xs:hidden md:block md:w-[60%] max-w-[570px]" src="../src/images/productSectionImg.png" alt="img">
+                <img class="xs:hidden md:block md:w-[60%] max-w-[570px]" src="../../../Users/Anton/Desktop/dist/images/productSectionImg.png"
+                     alt="img">
                 <div class="productSection_products
                             justify-between opacity-90 bg-slate-50 dark:bg-blueDeep
                             md:absolute lg:right-[10%] md:right-0 md:top-[5%] lg:top-[10%]
@@ -210,10 +211,10 @@
                 </p>
                 <p class="author font-PlayFair text-xl italic
                     mt-10 mx-auto max-w-[710px] text-slate-50 xs:text-center md:text-left">Lennon Burnett, Solis Group CEO</p>
-            </div>      
+            </div>
         </section>
         <section class="laptop xs:text-center md:text-left xs:container mx-auto">
-                <div class="imgWrapper before:bg-[url('/src/images/iconPlay.svg')]
+                <div class="imgWrapper before:bg-[url('./images/iconPlay.svg')]
                             xs:before:w-[120px] xs:before:h-[120px] md:before:w-[120px] md:before:h-[120px] relative
                             before:absolute before:top-1/2 before:left-1/2
                             before:translate-x-[-50%] before:translate-y-[-50%]">
@@ -227,7 +228,7 @@
                         mx-auto xs:mt-12 sm:mt-24 lg:mt-36
                         xs:bg-productSection bg-cover bg-no-repeat md:bg-none
                         flex justify-between relative">
-            <img class="xs:hidden md:block md:w-[60%] max-w-[600px]" src="/src/images/benefitImg.png" alt="img">
+            <img class="xs:hidden md:block md:w-[60%] max-w-[600px]" src="../../../Users/Anton/Desktop/dist/images/benefitImg.png" alt="img">
             <div class="benefits__container sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:items-center
                         xs:w-full md:w-fit sm:justify-items-start sm:text-left xs:gap-y-7 sm:gap-0
                         xs:flex xs:flex-col xs:items-center xs:text-center 
@@ -266,16 +267,21 @@
         </section>
         <section class="reviews md:text-center lg:text-left xs:mt-12 sm:mt-24 lg:mt-36
                         lg:container xl:container 2xl:container mx-auto xs:text-center">
-            <h2 class="">Client <span class="textHighlighter">reviews</span></h2>
+            <div class="title">
+            <h2>Client <span class="textHighlighter">reviews</span></h2>
             <p class="articleText max-w-[400px]
-                        mt-5 xs:mx-auto lg:mx-0">Happy clients, happy us. Read our client reviews about the work process and results.</p>
+                        mt-5 xs:mx-auto lg:mx-0">Happy clients, happy us. Read our client reviews about the work process
+                                                 and results.</p>
+            </div>
+
             <div class="flex-container flex xs:flex-col
+                        xs:items-center
                         lg:flex-row md:justify-between gap-x-5
                         xs:gap-y-5 md:gap-y-10 lg:gap-y-0
                         mt-12">
                 <div class="bg-reviewsFirst bg-no-repeat bg-cover
-                            md:max-w-[50%] mx-auto lg:max-w-none
-                            md:px-10 xs:py-[30px] xs:w-full 2xs:w-fit 2xs:px-8
+                              lg:max-w-none max-h-[300px]
+                            md:px-10 xs:py-[30px] xs:w-full  2xs:px-8
                             flex flex-col items-center justify-between">
                     <p class="max-w-[290px] mx-auto lg:mx-0 opacity-80 text-slate-50">
                         Solis did a great job. Whether providing direct development support or giving us the opportunity to make our development updates, Solis's web design expertise and support services were top notch! It didn't take long to stand up our website, and we were pleased with the design and layout of the graphics and information.
@@ -283,8 +289,8 @@
                     <p class="author font-PlayFair text-xl italic text-slate-50 font-normal mt-5">Dr. Jamika Burge</p>
                 </div>
                 <div class="bg-reviewsSecond bg-no-repeat bg-cover
-                                    md:max-w-[50%] mx-auto lg:max-w-none
-                                    md:px-10 xs:py-[30px] xs:w-full 2xs:w-fit 2xs:px-8
+                                     lg:max-w-none max-h-[300px]
+                                    md:px-12 xs:py-[30px] xs:w-full  2xs:px-8
                                     flex flex-col items-center justify-between">
                     <p class="max-w-[290px] mx-auto lg:mx-0 opacity-80 text-slate-50">
                         Solis is a cutting edge company and knows the importance of excellence. Having been in business for 21 years, I know when I’ve found a competent professional and more importantly a company with integrity. I highly recommend this company and am available for further reference if needed.
@@ -292,8 +298,8 @@
                     <p class="author font-PlayFair text-xl italic text-slate-50 font-normal mt-5">Dr. Jamika Burge</p>
                 </div>
                 <div class="bg-reviewsThird bg-no-repeat bg-cover
-                            md:max-w-[50%] mx-auto lg:max-w-none
-                            md:px-10 xs:py-[30px] xs:w-full 2xs:w-fit 2xs:px-8
+                             lg:max-w-none h-[300px]
+                            md:px-10 xs:py-[30px] xs:w-full 2xs:px-8
                             flex flex-col items-center justify-between">
                     <p class="max-w-[290px] mx-auto lg:mx-0 opacity-80 text-slate-50">
                         I can't say enough about how knowledgeable Toinette Rorie is in the area of Web Development. She indeed is a developer and can build a site from scratch. She understands functionality and is great at constructing a site that is robust and fully functioning. 
@@ -339,7 +345,8 @@
         </section>
     </main>
     <footer class="dark:bg-blueMainBackground bg-slate-50 mt-[100px]">
-        <div class="container w-[80%] mx-auto py-7 border-t-[1px] border-grayDark flex xs:justify-center sm:justify-between items-center ">
+        <div
+                class="container w-full mx-auto py-7 border-t-[1px] border-grayDark flex xs:justify-center sm:justify-between items-center ">
             <span class="inline font-Lato dark:text-slate-50 opacity-80 text-lg font-light">
                 © 2020 Solisgroup. All Rights Reserved.
             </span>
@@ -357,6 +364,6 @@
         </div>
     </footer>
 </body>
-<script src="/src/index.js"></script>
+<script src="./index.js"></script>
 
 </html>

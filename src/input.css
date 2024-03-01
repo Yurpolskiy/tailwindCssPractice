@@ -1,9 +1,27 @@
+@tailwind base;
 @tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1,h2,h3 {
+        font-family: "Playfair Display", sans-serif;
+        @apply dark:text-slate-50 text-brightBlack;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+}
 
 @layer components {
 
     .headerLink {
-        @apply text-sm sm:text-xl font-semibold  text-brightBlack dark:text-slate-50 relative 
+        @apply text-sm sm:text-xl font-semibold  text-brightBlack dark:text-slate-50 relative
     }
 
     .adaptiveContainer {
@@ -34,7 +52,7 @@
         top: -35px;
         left: -51px;
     }
-    
+
     .quoteDark {
         content: url('/src/images/quoteDark.svg');
 
@@ -49,7 +67,7 @@
         width: 100px;
         height: 1px;
 
-        background: theme(colors.spring)
+        background: #ffffff;
     }
 
     .underlineGreen {
@@ -76,39 +94,39 @@
         transition: 0.2s ease;
       }
     .buttonUnderlineGreen {
-        position: absolute; 
+        position: absolute;
         bottom: 0;
         left: 10%;
 
-        background: theme(colors.neonGreen);
+        background: #53F3CD;
         opacity: 0.3;
 
         height: 13px;
         width: 100%;
-        
+
     }
     .buttonUnderlineGreen:hover {
         background: #02E0AB;
     }
     .buttonUnderlineCoral {
-        position: absolute; 
+        position: absolute;
         bottom: 0;
         left: 10%;
 
-        background: theme(colors.coral);
+        background: #F1897B;
         opacity: 0.3;
 
         height: 13px;
         width: 100%;
     }
     .buttonUnderlineCoral:hover {
-        background: theme(colors.coralDarker)
+        background: #E54F3A;
     }
 }
 
 .laptop img {
     margin: 0 auto;
-    width: 80%; 
+    width: 80%;
     max-width: 970px;
 
     position: relative;
