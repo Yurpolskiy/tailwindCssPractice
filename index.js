@@ -9,6 +9,6 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 (function imageCreator() {
   let laptop = document.querySelector('.imgWrapper')
   let imageElement = document.createElement("img")
-  document.documentElement.classList.contains('dark') ? imageElement.src = './images/screensaverBlack.png' : imageElement.src = '/src/images/screensaverWhite.png'
+  document.documentElement.classList.contains('dark') ? imageElement.src = './images/screensaverBlack.png' : imageElement.src = './images/screensaverWhite.png'
   laptop.appendChild(imageElement)
 }())
